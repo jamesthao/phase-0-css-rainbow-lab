@@ -24,10 +24,10 @@ describe("main.css", () => {
     const rule = findRule(css.cssRules, "#red");
     expect(rule, "Missing #red rule").to.exist;
 
-    const hint = "Incorrect border-top-color property for #red";
-    expect(rule.style["border-top-color"], hint).to.eq("#f00");
-  });
-
+    const hint = #red {
+      /* this selects any elements with the red id */
+      border-top-color: #f00;
+    }
   it("sets #orange div border-top-color to #ffa500", () => {
     const rule = findRule(css.cssRules, "#orange");
     expect(rule, "Missing #orange rule").to.exist;
